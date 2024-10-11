@@ -452,6 +452,21 @@ class QRDRequest(Schema):
    monthlyrent=fields.Str(default="30000")
    deposit=fields.Str(default="100000") 
 
+class RoomAgreementRequest(Schema):
+   Total_Amount =fields.Str(default="")
+   Parameter1 =fields.Str(default="")
+   Line_Address =fields.Str(default="")
+   Currentdate =fields.Str(default="")
+   Start_Date =fields.Str(default="")
+   Signature2 =fields.Str(default="")
+   Signature1 =fields.Str(default="")
+   Lessee_Name =fields.Str(default="")
+   Father_Name =fields.Str(default="")
+   Lessor_Name =fields.Str(default="")
+   Witness2_Name =fields.Str(default="")
+   Witness1_Name =fields.Str(default="")
+   Full_Name =fields.Str(default="")
+
 class NLTRequest(Schema):
    InsertDate=fields.Str(default="InsertDate")
    LandlordsFullName=fields.Str(default="LandlordsFullName")
